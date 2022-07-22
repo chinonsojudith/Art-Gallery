@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.shadow{
+    box-shadow: 5px 4px 8px 0;
+}
+.shadow:hover{
+    transform: translateY(-20px)
+}
+.card{
+    background-image:url('img/fantasy-g4aa1220b5_1920.jpg');
+   min-height:70vh;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position: top;
+   
+   
+}
+.card-1{
+    background-image:url("img/girl-gd753a0199_1920.jpg" );
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:70vh;
+    background-position: top;
+}
+.card-2{
+    background-image:url("img/colors-gc565bda6e_1920.jpg" );
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:70vh;
+    background-position: top;
+}
+.card-3{
+    background-image:url("img/fantasy-g4aa1220b5_1920.jpg"  );
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height:70vh;
+    background-position: top;
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 2px;
+    transition: all 0.25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top:0;
+    left:0;
+    width:24px;
+    height: 3px;
+    background:#000;
+    transform:rotate(0);
+    transition:all 0.5s;
+    
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform:rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform:rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display:none;
+}
+.open .hamburger-bottom{
+    transform:rotate(-45deg) translateY(6px) translate(-6px);
+}
